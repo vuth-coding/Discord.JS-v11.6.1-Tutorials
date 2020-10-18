@@ -10,7 +10,7 @@ module.exports = {
         accessableby: "Member",
         aliases: ["p", "pplay"]
     },
-    run: async (bot, message, args) => {
+    run: async (client, message, args) => {
         const { voiceChannel } = message.member;
         if (!voiceChannel) return message.channel.send("You need to be in a voice channel to play music.");
 
